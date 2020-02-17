@@ -1,0 +1,7 @@
+{
+  "name": "siksainfo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

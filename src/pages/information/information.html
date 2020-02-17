@@ -1,0 +1,25 @@
+<!--
+  Generated template for the InformationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="light">
+    <ion-title>{{header}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ 
+
+  <ion-row>
+    <ion-col col-6 *ngFor="let item of getlibaryid" (click)="subtitle(item)" text-center>
+      <img src="assets/imgs/SecondLogo.png">
+      <p text-center>{{item.Title}}</p>
+    </ion-col>
+  </ion-row>
+</ion-content>

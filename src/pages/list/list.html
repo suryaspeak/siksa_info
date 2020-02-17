@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar color="list">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Learning Libary</ion-title>
+  </ion-navbar>
+  <ion-searchbar  [(ngModel)]="searchTerm" (ionInput)="filterItems1()"></ion-searchbar>
+</ion-header>
+
+
+<ion-content >
+  <!-- <ion-list>
+    <ion-item *ngFor="let item of newfinter" (click)="subtitle(item)">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/icon.jpg">
+      </ion-thumbnail>
+      <h2 >{{item.Title}}</h2>
+    
+    
+    </ion-item>
+  </ion-list> -->
+
+  <ion-row>
+    <ion-col col-6 *ngFor="let item of newfinter" (click)="subtitle(item)" text-center>
+      <div padding id="pad">
+          <img src="assets/imgs/icon.png">
+          <p text-center>{{item.Title}}</p>
+      </div>
+      
+    </ion-col>
+  </ion-row>
+  <!-- <tree-view [items]="items" [persistedName]="persistedName" [treeViewName]="treeViewName"></tree-view> -->
+  <!-- <resource-tree-view [TreeData]="Family" [hasCheckbox]="true" (click)="data(Family.FileName)"></resource-tree-view> -->
+</ion-content>

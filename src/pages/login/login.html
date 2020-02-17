@@ -1,0 +1,35 @@
+
+<ion-content text-center>
+    <img class="headerimage" src="assets/imgs/loginicon.png">
+<h4 text-center><b>S</b>ystem for <b>I</b>ntegrated <b>K</b>nowledge and <b>S</b>kill <b>A</b>dvancement</h4>
+    <!-- <div class="center" ion-fixed> -->
+
+      <img class="eco" src="assets/imgs/one.jpg">
+      <div class="container"  margin>
+          <form [formGroup]="todo" (ngSubmit)="logForm()">
+            <ion-item >
+              <ion-input type="text" formControlName="EmployeeId" placeholder="Emp Id"></ion-input>
+              
+            </ion-item>
+            <ion-item>
+              <!-- <ion-label floating>Password</ion-label> -->
+              <ion-input formControlName="Password" [type]="passwordType" placeholder="*********" clearOnEdit="false"></ion-input>
+              <ion-icon item-end [name]="passwordIcon" class="passwordIcon"  (click)='hideShowPassword()'></ion-icon>
+          </ion-item>
+            <!-- <ion-item >
+              <ion-input type="password"  formControlName="Password" placeholder="*********" ></ion-input>
+            </ion-item> -->
+            <p text-center style="color:rgb(92, 10, 10)" (click)="reset()"><span><u>Click here </u></span><b>Forgot Password? </b></p>
+            <!-- <p text-center>Not a member <span style="color:rgb(252, 252, 252);padding-left: 2px;font-weight: bold">Register</span></p> -->
+          
+           <div text-center >
+            <button ion-button round style="background-color:rgb(2, 2, 29); color: #ffc50c">Login</button>
+          </div>
+           </form>
+      </div>
+      <img class="eco" src="assets/imgs/sec.jpg">
+    <!-- </div> -->
+  
+  
+  
+  </ion-content>

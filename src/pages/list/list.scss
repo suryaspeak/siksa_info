@@ -1,0 +1,45 @@
+page-list {
+
+    button {
+        align-items: baseline;
+    }
+   
+    ion-item{
+        background-color: rgb(26, 24, 24) !important;
+        border-top-right-radius: 10px!important;
+       border-bottom-left-radius: 10px!important;
+       opacity: 0.8;
+       animation: 1s spaceInUp;
+    }
+    h2 {
+        color :rgb(0, 0, 0)
+
+
+
+    }
+    .item-md {
+       color:white;
+        margin-top: 1px;
+    }
+    .item-md p {
+      
+        color: rgb(66, 65, 63)
+    }
+    ion-searchbar{
+        background-color: rgba(26, 24, 24, 0.411)  !important;
+      opacity: 0.8;
+        
+      
+    }
+    #pad{
+        img{
+            width: 70%;
+        }
+       
+       height: 170px;
+        // margin-bottom: 1%;
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        
+    }
+}
